@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cu-project2"
+name = "cu-project3"
 version = "0.1.0"
 description = ""
 authors = ["Rodion Gudz <rodion.gudz@icloud.com>"]
@@ -9,6 +9,13 @@ readme = "README.md"
 python = "^3.11"
 requests = "^2.32.3"
 flask = "^3.0.3"
+aiogram = "2.9"
+plotly = "^5.24.1"
+dash = "^2.18.1"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+dash-bootstrap-components = "^1.6.0"
+folium = "^0.18.0"
 
 
 [tool.poetry.group.dev.dependencies]

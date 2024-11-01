@@ -1,4 +1,4 @@
-# **Проект 2.** Веб-сервис по предсказанию неблагоприятных погодных условий для путешественников
+# **Проект 3.** Визуализация для веб-сервиса по предсказанию неблагоприятных погодных условий для путешественников
 
 ### API ключ для тестирования
 
@@ -20,7 +20,7 @@ ACCUWEATHER_API_KEY=DvTIGor3G9AjzPN8J2A9BpXgG8knkCRS
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone https://github.com/rodion-gudz/CU_project2
+    git clone https://github.com/rodion-gudz/CU_project3
     cd weather-app
     ```
 
@@ -36,18 +36,30 @@ ACCUWEATHER_API_KEY=DvTIGor3G9AjzPN8J2A9BpXgG8knkCRS
 
 4. Создайте файл `.env` в корневой директории с вашим API-ключом от AccuWeather:
     ```bash
-    ACCUWEATHER_API_KEY=your_api_key_here
+    ACCUWEATHER_API_KEY=API_TOKEN
+    TELEGRAM_BOT_TOKEN=BOT_TOKEN
+    INTERNAL_WEATHER_API_URL=http://127.0.0.1:8050/weather
     ```
 
 ## Запуск
 
+### Веб
+
 Для запуска приложения выполните следующую команду:
 
 ```bash
-flask run
+python -m app
 ```
 
-Приложение будет доступно по адресу `http://127.0.0.1:5000`
+Приложение будет доступно по адресу `http://127.0.0.1:8050`
+
+### Бот
+
+Для запуска бота выполните следующую команду:
+
+```bash
+python app/bot.py
+```
 
 ## Функциональность
 
